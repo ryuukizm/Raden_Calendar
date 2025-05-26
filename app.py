@@ -42,3 +42,6 @@ def fetch_events_within_range():
 def get_schedule():
     events = fetch_events_within_range()
     return jsonify({"events": events})
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
